@@ -1,1 +1,33 @@
 // Navigation Styles here
+.navigation {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: @section-border;
+  }
+
+  a {
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 1.6rem;
+    color: black;
+
+    @media @mobile {
+      font-size: 1.5rem;
+    }
+  }
+
+  .logo {
+    font-size: 4rem;
+    font-family: "Indie Flower", cursive;
+
+    @media @mobile {
+      font-size: 3rem;
+    }
+  }
+}
